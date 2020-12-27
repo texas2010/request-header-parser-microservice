@@ -1,6 +1,8 @@
 // server.js
 // where your node app starts
 
+if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
+
 // init project
 var express = require('express');
 var app = express();
